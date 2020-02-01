@@ -1,0 +1,115 @@
+abstract classAbstractMap[K, +V] extends collection.AbstractMap[K, V] with Map[K, V]
+Explicit instantiation of the Map trait to reduce class file size in subclasses.
+
+abstract classAbstractSeq[+A]
+Explicit instantiation of the Seq trait to reduce class file size in subclasses.
+
+abstract classAbstractSet[A]
+Explicit instantiation of the Set trait to reduce class file size in subclasses.
+
+sealed abstract classArraySeq[+A]
+An immutable array.
+
+sealed abstract classBitSet
+A class for immutable bitsets.
+
+final classHashMap[K, +V]
+This class implements immutable maps using a Compressed Hash-Array Mapped Prefix-tree.
+
+final classHashSet[A]
+This class implements immutable sets using a Compressed Hash-Array Mapped Prefix-tree.
+
+traitIndexedSeq[+A]
+Base trait for immutable indexed sequences that have efficient apply and length
+
+traitIndexedSeqOps[+A, +CC[_], +C]
+Base trait for immutable indexed Seq operations
+
+sealed abstract classIntMap[+T]
+Specialised immutable map structure for integer keys, based on Fast Mergeable Integer Maps by Okasaki and Gill.
+
+traitIterable[+A]
+A trait for collections that are guaranteed immutable.
+
+final classLazyList[+A]
+This class implements an immutable linked list that evaluates elements in order and only when needed.
+
+traitLinearSeq[+A]
+Base trait for immutable linear sequences that have efficient head and tail
+
+traitLinearSeqOps[+A, +CC[X] <: LinearSeq[X], +C <: LinearSeq[A] with LinearSeqOps[A, CC, C]]
+sealed abstract classList[+A]
+A class for immutable linked lists representing ordered collections of elements of type A.
+
+sealed classListMap[K, +V]
+This class implements immutable maps using a list-based data structure.
+
+sealed classListSet[A]
+This class implements immutable sets using a list-based data structure.
+
+sealed abstract classLongMap[+T]
+Specialised immutable map structure for long keys, based on Fast Mergeable Long Maps by Okasaki and Gill.
+
+traitMap[K, +V]
+Base type of immutable Maps
+
+traitMapOps[K, +V, +CC[X, +Y] <: MapOps[X, Y, CC, _], +C <: MapOps[K, V, CC, C]]
+Base trait of immutable Maps implementations
+
+sealed classNumericRange[T]
+NumericRange is a more generic version of the Range class which works with arbitrary types.
+
+sealed classQueue[+A]
+Queue objects implement data structures that allow to insert and retrieve elements in a first-in-first-out (FIFO) manner.
+
+sealed abstract classRange
+The Range class represents integer values in range [start;end) with non-zero step value step.
+
+traitSeq[+A]
+traitSeqMap[K, +V]
+A generic trait for ordered immutable maps.
+
+traitSeqOps[+A, +CC[_], +C]
+traitSet[A]
+Base trait for immutable set collections
+
+traitSetOps[A, +CC[X], +C <: SetOps[A, CC, C]]
+Base trait for immutable set operations
+
+traitSortedMap[K, +V]
+An immutable map whose key-value pairs are sorted according to an scala.math.Ordering on the keys.
+
+traitSortedMapOps[K, +V, +CC[X, +Y] <: Map[X, Y] with SortedMapOps[X, Y, CC, _], +C <: SortedMapOps[K, V, CC, C]]
+traitSortedSet[A]
+Base trait for sorted sets
+
+traitSortedSetOps[A, +CC[X] <: SortedSet[X], +C <: SortedSetOps[A, CC, C]]
+traitStrictOptimizedMapOps[K, +V, +CC[X, +Y] <: MapOps[X, Y, CC, _], +C <: MapOps[K, V, CC, C]]
+traitStrictOptimizedSeqOps[+A, +CC[_], +C]
+Trait that overrides operations to take advantage of strict builders.
+
+traitStrictOptimizedSetOps[A, +CC[X], +C <: SetOps[A, CC, C]]
+traitStrictOptimizedSortedMapOps[K, +V, +CC[X, +Y] <: Map[X, Y] with SortedMapOps[X, Y, CC, _], +C <: SortedMapOps[K, V, CC, C]]
+traitStrictOptimizedSortedSetOps[A, +CC[X] <: SortedSet[X], +C <: SortedSetOps[A, CC, C]]
+typeStringOps = collection.StringOps
+typeStringView = collection.StringView
+final classTreeMap[K, +V]
+An immutable SortedMap whose values are stored in a red-black tree.
+
+final classTreeSeqMap[K, +V]
+This class implements an immutable map that preserves order using a hash map for the key to value mapping to provide efficient lookup, and a tree for the ordering of the keys to provide efficient insertion/modification order traversal and destructuring.
+
+final classTreeSet[A]
+This class implements immutable sorted sets using a tree.
+
+final classVector[+A]
+Vector is a general-purpose, immutable data structure.
+
+final classVectorBuilder[A]
+A class to build instances of Vector.
+
+final classVectorMap[K, +V]
+This class implements immutable maps using a vector/map-based data structure, which preserves insertion order.
+
+final classWrappedString
+This class serves as a wrapper augmenting Strings with all the operations found in indexed sequences.
